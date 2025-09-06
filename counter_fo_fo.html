@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counter (FO → FO) – Footwork</title>
+<style>
+:root{--ink:#0b1727; --muted:#5b728a; --accent:#0a7; --bg:#fff; --rule:#e5e7eb; --nav:#0b1727; --nav2:#12263f;}
+[data-theme="dark"]{--ink:#e5e7eb; --muted:#9ca3af; --accent:#14b8a6; --bg:#0b1727; --rule:#374151; --nav:#0b1727; --nav2:#12263f;}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px;min-height:100vh}
+.sidebar{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--nav);color:#fff;padding:16px 14px;border-right:1px solid #0f223a}
+.sidebar .brand{font-weight:800;letter-spacing:.02em;margin-bottom:8px}
+.sidebar details{margin-bottom:10px}
+.sidebar summary{font-weight:700;font-size:1.02rem;margin:6px 0 8px 0;cursor:pointer}
+.sidebar ul{list-style:none;padding-left:0;margin:0}
+.sidebar li{margin:6px 0}
+.sidebar a{color:#e6f3ff;text-decoration:none}
+.sidebar a:hover{text-decoration:underline}
+.sidebar .theme-switch{margin:8px 0 12px}
+.sidebar .modebtn{width:100%;padding:6px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:#fff;background:linear-gradient(180deg,#14b8a6,#0a7);cursor:pointer}
+.sidebar .modebtn:hover{filter:brightness(0.95)}
+.main{padding:28px 28px 80px}
+.main h1{font-size:2rem;margin:0 0 .5rem 0}
+h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
+.block{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0;}
+.badge{display:inline-block;font-size:.78rem;border:1px solid var(--rule);border-radius:999px;padding:2px 8px;color:var(--muted);margin-left:8px}
+.small{font-size:.9rem;color:var(--muted);}
+@media (max-width: 900px){ .layout{grid-template-columns:1fr} .sidebar{position:relative;height:auto} }
+@media print{ .layout{grid-template-columns:1fr} .sidebar{display:none} .main{padding:10mm} }
+</style></head>
+<body>
+<div class="layout">
+  <nav class="sidebar"><div class="brand">Skating Manual</div>
+<div class="theme-switch"><button id="modeToggleSide" class="modebtn">🌙 Dark Mode</button></div>
+<details open><summary>Home</summary><ul><li><a href="index.html">Overview</a></li><li><a href="hub.html">Hub</a></li></ul></details>
+<details open><summary>Jumps</summary><ul>
+<li><a href="waltz_jump.html">Waltz Jump</a></li>
+<li><a href="toe_loop.html">Toe Loop</a></li>
+<li><a href="salchow.html">Salchow</a></li>
+<li><a href="loop.html">Loop</a></li>
+<li><a href="flip.html">Flip</a></li>
+<li><a href="lutz.html">Lutz</a></li>
+<li><a href="axel.html">Axel</a></li>
+</ul></details>
+<details open><summary>Spins</summary><ul>
+<li><a href="upright_spin.html">Upright Spin</a></li>
+<li><a href="sit_spin.html">Sit Spin</a></li>
+<li><a href="camel_spin.html">Camel Spin</a></li>
+<li><a href="backspin.html">Backspin</a></li>
+<li><a href="layback_spin.html">Layback Spin</a></li>
+<li><a href="pancake_spin.html">Pancake Spin</a></li>
+<li><a href="donut_biellmann_spin.html">Donut–Biellmann Spin</a></li>
+<li><a href="tuck_spin.html">Tuck Spin</a></li>
+<li><a href="crossfoot_spin.html">Crossfoot Spin</a></li>
+<li><a href="flying_entry_foundation.html">Flying Entry (Foundation)</a></li>
+<li><a href="flying_upright.html">Flying Upright</a></li>
+<li><a href="flying_sit.html">Flying Sit</a></li>
+<li><a href="flying_camel.html">Flying Camel</a></li>
+</ul></details>
+<details open><summary>Lunges & Glides</summary><ul>
+<li><a href="forward_lunge.html">Forward Lunge</a></li>
+<li><a href="backward_lunge.html">Backward Lunge</a></li>
+<li><a href="side_lunge.html">Side Lunge</a></li>
+<li><a href="spread_eagle.html">Spread Eagle</a></li>
+<li><a href="ina_bauer.html">Ina Bauer</a></li>
+<li><a href="spider_lunge.html">Spider Lunge</a></li>
+<li><a href="shoot_the_duck.html">Shoot-the-Duck</a></li>
+<li><a href="hydroblade.html">Hydroblade</a></li>
+<li><a href="knee_slide.html">Knee Slide</a></li>
+</ul></details>
+<details open><summary>Footwork</summary><ul>
+<li><a href="three_turn_fo_bi.html">Three‑Turn (FO → BI)</a></li>
+<li><a href="three_turn_fi_bo.html">Three‑Turn (FI → BO)</a></li>
+<li><a href="back_three_bo_fo.html">Back Three (BO → FO)</a></li>
+<li><a href="back_three_bi_fi.html">Back Three (BI → FI)</a></li>
+<li><a href="bracket_fo_bo.html">Bracket (FO → BO)</a></li>
+<li><a href="bracket_fi_bi.html">Bracket (FI → BI)</a></li>
+<li><a href="bracket_bo_fo.html">Bracket (BO → FO)</a></li>
+<li><a href="bracket_bi_fi.html">Bracket (BI → FI)</a></li>
+<li><a href="rocker_fo_fo.html">Rocker (FO → FO)</a></li>
+<li><a href="rocker_fi_fi.html">Rocker (FI → FI)</a></li>
+<li><a href="rocker_bo_bo.html">Rocker (BO → BO)</a></li>
+<li><a href="rocker_bi_bi.html">Rocker (BI → BI)</a></li>
+<li><a href="counter_fo_fo.html">Counter (FO → FO)</a></li>
+<li><a href="counter_fi_fi.html">Counter (FI → FI)</a></li>
+<li><a href="counter_bo_bo.html">Counter (BO → BO)</a></li>
+<li><a href="counter_bi_bi.html">Counter (BI → BI)</a></li>
+<li><a href="open_mohawk.html">Open Mohawk</a></li>
+<li><a href="closed_mohawk.html">Closed Mohawk</a></li>
+<li><a href="swing_mohawk.html">Swing Mohawk</a></li>
+<li><a href="choctaw_fo_bi.html">Choctaw (FO → BI)</a></li>
+<li><a href="choctaw_fi_bo.html">Choctaw (FI → BO)</a></li>
+<li><a href="swing_choctaw_fo_bi.html">Swing Choctaw (FO → BI)</a></li>
+<li><a href="swing_choctaw_fi_bo.html">Swing Choctaw (FI → BO)</a></li>
+<li><a href="forward_cross_rolls.html">Forward Cross‑Rolls</a></li>
+<li><a href="backward_cross_rolls.html">Backward Cross‑Rolls</a></li>
+<li><a href="chasses.html">Chassés</a></li>
+<li><a href="twizzles_fo.html">Twizzles (FO)</a></li>
+<li><a href="twizzles_fi.html">Twizzles (FI)</a></li>
+<li><a href="twizzles_bo.html">Twizzles (BO)</a></li>
+<li><a href="twizzles_bi.html">Twizzles (BI)</a></li>
+<li><a href="twizzles_alternating_sets.html">Twizzles – Alternating Sets</a></li>
+<li><a href="step_sequence_blueprint.html">Step Sequence (Blueprint)</a></li>
+<li><a href="rocker_to_loop.html">Turn‑to‑Jump: Rocker → Loop</a></li>
+<li><a href="bracket_to_axel.html">Turn‑to‑Jump: Bracket → Axel</a></li>
+</ul></details>
+<details open><summary>Skills / MITF</summary><ul>
+<li><a href="perimeter_stroking.html">Perimeter Stroking</a></li>
+<li><a href="forward_power_pulls.html">Forward Power Pulls</a></li>
+<li><a href="backward_power_pulls.html">Backward Power Pulls</a></li>
+<li><a href="forward_crossovers.html">Forward Crossovers</a></li>
+<li><a href="backward_crossovers.html">Backward Crossovers</a></li>
+<li><a href="forward_edges_serpentine.html">Forward Edges Serpentine</a></li>
+<li><a href="backward_edges_serpentine.html">Backward Edges Serpentine</a></li>
+<li><a href="bracket_pattern.html">Bracket Pattern</a></li>
+<li><a href="rocker_pattern.html">Rocker Pattern</a></li>
+<li><a href="counter_pattern.html">Counter Pattern</a></li>
+<li><a href="choctaw_pattern.html">Choctaw Pattern</a></li>
+<li><a href="twizzle_pattern.html">Twizzle Pattern</a></li>
+<li><a href="spiral_sequence.html">Spiral Sequence</a></li>
+</ul></details></nav>
+  <main class="main">
+    <h1>Counter (FO → FO) <span class="badge">Footwork</span></h1>
+    <p class="small">Detailed coaching card.</p>
+    <div class="block"><h3>What it is</h3><p>Counter from FO to FO. Against‑curve snap; strong shoulder check.</p></div><div class="block"><h3>Phases</h3><p><b>Entry</b></p><ul><li>Ride FO with tall posture; free leg back/low; arms compact.</li></ul><p><b>Turn</b></p><ul><li>Rise ankle→knee→hip at the top of the lobe.</li><li>Rotate/snap as required; feet tight; head steady.</li></ul><p><b>Exit</b></p><ul><li>Hold FO with a small check; free leg extends; continue flow.</li></ul></div><div class="block"><h3>Counts / Timing</h3><p>Ride → Rise → Rotate/Snap → Check → Exit</p></div><div class="block"><h3>Arm & Leg Timeline</h3><ul><li>Arms tiny; elbows near ribs.</li><li>Free foot close at rise; toe pointed on exit.</li><li>Head fixed on travel line.</li></ul></div><div class="block"><h3>Common Mistakes & Fixes</h3><ul><li>Flats at turn → keep ankle/knee roll.</li><li>Early shoulder swing → wait to rise.</li><li>Travel → reduce arm amplitude; feet tighter.</li></ul></div><div class="block"><h3>Practice Routine</h3><p><b>Dots & Imitations</b></p><ul><li>Mark entry/turn/exit dots; two‑foot timing x2 lengths.</li></ul><p><b>Singles</b></p><ul><li>6 reps per side focusing on rise timing.</li></ul><p><b>Linked Flow</b></p><ul><li>Serpentine linking 3 turns with even spacing.</li></ul></div><div class="block"><h3>Off‑Ice Support</h3><ul><li>Pallof press 3×12</li><li>Ankle mobility 3×10</li><li>Single‑leg balance 3×30 s</li></ul></div><div class="block"><h3>Weekly Structure</h3><ul><li>D1 timing</li><li>D2 exits</li><li>D3 linking</li></ul></div><div class="block"><h3>Self‑Check Cues</h3><ul><li>Rise before rotate?</li><li>Exit held 2 counts?</li><li>No heel rock?</li></ul></div><div class="block"><h3>Progression Notes</h3><ul><li>Harder entries (cross‑roll/choctaw)</li><li>Increase speed while keeping shapes small</li></ul></div><div class="block"><h3>Improving This Element</h3><ul><li>Smaller shapes; steady head; micro knee pulses.</li></ul></div>
+    <hr>
+    <p class="small"><a href="hub.html">Back to Hub</a></p>
+  </main>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var btn=document.getElementById('modeToggleSide');
+  if(!btn) return;
+  function setLabel(theme){ btn.textContent = theme==='dark' ? '☀️ Light Mode' : '🌙 Dark Mode'; }
+  btn.addEventListener('click',function(){
+    var el=document.documentElement;
+    var theme = el.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+    el.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    setLabel(theme);
+  });
+  var saved=localStorage.getItem('theme')||'light';
+  document.documentElement.setAttribute('data-theme', saved);
+  setLabel(saved);
+});
+</script>
+</body></html>
