@@ -3,8 +3,8 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Twizzles (BI) – Footwork</title>
 <style>
-:root{--ink:#0b1727; --muted:#5b728a; --accent:#0a7; --bg:#fff; --rule:#e5e7eb; --nav:#0b1727; --nav2:#12263f;}
-[data-theme="dark"]{--ink:#e5e7eb; --muted:#9ca3af; --accent:#14b8a6; --bg:#0b1727; --rule:#374151; --nav:#0b1727; --nav2:#12263f;}
+:root{--ink:#0b1727; --muted:#5b728a; --accent:#0a7; --bg:#fff; --card:#ffffff; --rule:#e5e7eb; --nav:#0b1727; --nav2:#12263f;}
+[data-theme="dark"]{--ink:#e5e7eb; --muted:#9ca3af; --accent:#14b8a6; --bg:#0b1727; --card:#0f223a; --rule:#374151; --nav:#0b1727; --nav2:#12263f;}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
 .layout{display:grid;grid-template-columns:260px 1fr;gap:24px;min-height:100vh}
 .sidebar{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--nav);color:#fff;padding:16px 14px;border-right:1px solid #0f223a}
@@ -21,9 +21,10 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.5
 .main{padding:28px 28px 80px}
 .main h1{font-size:2rem;margin:0 0 .5rem 0}
 h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
-.block{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0;}
+.block{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0;}
 .badge{display:inline-block;font-size:.78rem;border:1px solid var(--rule);border-radius:999px;padding:2px 8px;color:var(--muted);margin-left:8px}
 .small{font-size:.9rem;color:var(--muted);}
+details{margin:12px 0} details>summary{cursor:pointer;list-style:none} details>summary::-webkit-details-marker{display:none}
 @media (max-width: 900px){ .layout{grid-template-columns:1fr} .sidebar{position:relative;height:auto} }
 @media print{ .layout{grid-template-columns:1fr} .sidebar{display:none} .main{padding:10mm} }
 </style></head>
@@ -31,8 +32,8 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <div class="layout">
   <nav class="sidebar"><div class="brand">Skating Manual</div>
 <div class="theme-switch"><button id="modeToggleSide" class="modebtn">🌙 Dark Mode</button></div>
-<details open><summary>Home</summary><ul><li><a href="index.html">Overview</a></li><li><a href="hub.html">Hub</a></li></ul></details>
-<details open><summary>Jumps</summary><ul>
+<details><summary>Home</summary><ul><li><a href="index.html">Overview</a></li><li><a href="hub.html">Hub</a></li></ul></details>
+<details><summary>Jumps</summary><ul>
 <li><a href="waltz_jump.html">Waltz Jump</a></li>
 <li><a href="toe_loop.html">Toe Loop</a></li>
 <li><a href="salchow.html">Salchow</a></li>
@@ -41,7 +42,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="lutz.html">Lutz</a></li>
 <li><a href="axel.html">Axel</a></li>
 </ul></details>
-<details open><summary>Spins</summary><ul>
+<details><summary>Spins</summary><ul>
 <li><a href="upright_spin.html">Upright Spin</a></li>
 <li><a href="sit_spin.html">Sit Spin</a></li>
 <li><a href="camel_spin.html">Camel Spin</a></li>
@@ -56,7 +57,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="flying_sit.html">Flying Sit</a></li>
 <li><a href="flying_camel.html">Flying Camel</a></li>
 </ul></details>
-<details open><summary>Lunges & Glides</summary><ul>
+<details><summary>Lunges & Glides</summary><ul>
 <li><a href="forward_lunge.html">Forward Lunge</a></li>
 <li><a href="backward_lunge.html">Backward Lunge</a></li>
 <li><a href="side_lunge.html">Side Lunge</a></li>
@@ -67,7 +68,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="hydroblade.html">Hydroblade</a></li>
 <li><a href="knee_slide.html">Knee Slide</a></li>
 </ul></details>
-<details open><summary>Footwork</summary><ul>
+<details><summary>Footwork</summary><ul>
 <li><a href="three_turn_fo_bi.html">Three‑Turn (FO → BI)</a></li>
 <li><a href="three_turn_fi_bo.html">Three‑Turn (FI → BO)</a></li>
 <li><a href="back_three_bo_fo.html">Back Three (BO → FO)</a></li>
@@ -103,7 +104,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="rocker_to_loop.html">Turn‑to‑Jump: Rocker → Loop</a></li>
 <li><a href="bracket_to_axel.html">Turn‑to‑Jump: Bracket → Axel</a></li>
 </ul></details>
-<details open><summary>Skills / MITF</summary><ul>
+<details><summary>Skills / MITF</summary><ul>
 <li><a href="perimeter_stroking.html">Perimeter Stroking</a></li>
 <li><a href="forward_power_pulls.html">Forward Power Pulls</a></li>
 <li><a href="backward_power_pulls.html">Backward Power Pulls</a></li>
@@ -117,13 +118,15 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="choctaw_pattern.html">Choctaw Pattern</a></li>
 <li><a href="twizzle_pattern.html">Twizzle Pattern</a></li>
 <li><a href="spiral_sequence.html">Spiral Sequence</a></li>
+</ul></details>
+<details><summary>Resources</summary><ul>
+<li><a href="off_ice_exercises.html">Off‑Ice Exercise Guide</a></li>
 </ul></details></nav>
   <main class="main">
     <h1>Twizzles (BI) <span class="badge">Footwork</span></h1>
     <p class="small">Detailed coaching card.</p>
-    <div class="block"><h3>What it is</h3><p>Twizzles from BI to BI. Backward inside; hips square; head steady.</p></div><div class="block"><h3>Phases</h3><p><b>Entry</b></p><ul><li>Ride BI with tall posture; free leg back/low; arms compact.</li></ul><p><b>Turn</b></p><ul><li>Rise ankle→knee→hip at the top of the lobe.</li><li>Rotate/snap as required; feet tight; head steady.</li></ul><p><b>Exit</b></p><ul><li>Hold BI with a small check; free leg extends; continue flow.</li></ul></div><div class="block"><h3>Counts / Timing</h3><p>Ride → Rise → Rotate/Snap → Check → Exit</p></div><div class="block"><h3>Arm & Leg Timeline</h3><ul><li>Arms tiny; elbows near ribs.</li><li>Free foot close at rise; toe pointed on exit.</li><li>Head fixed on travel line.</li></ul></div><div class="block"><h3>Common Mistakes & Fixes</h3><ul><li>Flats at turn → keep ankle/knee roll.</li><li>Early shoulder swing → wait to rise.</li><li>Travel → reduce arm amplitude; feet tighter.</li></ul></div><div class="block"><h3>Practice Routine</h3><p><b>Dots & Imitations</b></p><ul><li>Mark entry/turn/exit dots; two‑foot timing x2 lengths.</li></ul><p><b>Singles</b></p><ul><li>6 reps per side focusing on rise timing.</li></ul><p><b>Linked Flow</b></p><ul><li>Serpentine linking 3 turns with even spacing.</li></ul></div><div class="block"><h3>Off‑Ice Support</h3><ul><li>Pallof press 3×12</li><li>Ankle mobility 3×10</li><li>Single‑leg balance 3×30 s</li></ul></div><div class="block"><h3>Weekly Structure</h3><ul><li>D1 timing</li><li>D2 exits</li><li>D3 linking</li></ul></div><div class="block"><h3>Self‑Check Cues</h3><ul><li>Rise before rotate?</li><li>Exit held 2 counts?</li><li>No heel rock?</li></ul></div><div class="block"><h3>Progression Notes</h3><ul><li>Harder entries (cross‑roll/choctaw)</li><li>Increase speed while keeping shapes small</li></ul></div><div class="block"><h3>Improving This Element</h3><ul><li>Smaller shapes; steady head; micro knee pulses.</li></ul></div>
-    <hr>
-    <p class="small"><a href="hub.html">Back to Hub</a></p>
+    <div class="block"><h3>What it is</h3><p>Traveling multi‑rev turns; immediate pull on count 1; axis control; minimal travel.</p></div><div class="block"><h3>Phases</h3><p><b>Entry</b></p><ul><li>Posture tall; arms narrow; head steady; align hips over edge.</li></ul><p><b>Load/Set</b></p><ul><li>Ankle→knee flex; feet close; shoulders stacked.</li></ul><p><b>Action</b></p><ul><li>Commit to the element with vertical rise/rotation or depth/lean as appropriate.</li></ul><p><b>Exit/Check</b></p><ul><li>Re‑stack; check shoulders; continue flow on clean edge.</li></ul></div><div class="block"><h3>Counts / Timing</h3><p>Ride → Rise → Rotate/Snap → Check → Exit (use metronome 92–108 BPM after shape is stable)</p></div><div class="block"><h3>Arm & Leg Timeline</h3><ul><li>Arms: compact on approach → quick zip at take‑off/pull‑in → open/check on exit.</li><li>Legs: knees/feet close on load → immediate pull/tight axis → controlled extension on exit.</li></ul></div><div class="block"><h3>Common Mistakes & Fixes</h3><ul><li>Flats at turn → maintain ankle/knee roll through rise.</li><li>Early shoulder swing → wait till rise.</li><li>Heel rock → keep pressure slightly forward; quiet head.</li></ul></div><div class="block"><h3>Practice Routine</h3><p><b>Dots & Imitations</b></p><ul><li>Mark entry/turn/exit dots; two‑foot timing x2 lengths.</li></ul><p><b>Singles</b></p><ul><li>6 reps per side focusing on rise timing and checks.</li></ul><p><b>Linked Flow</b></p><ul><li>Serpentine/sequence linking turns with even spacing.</li></ul></div><div class="block"><h3>Off‑Ice Support</h3><ul><li>Pallof press 3×12/side</li><li>Ankle mobility 3×10</li><li>Single‑leg balance 3×30 s</li></ul></div><div class="block"><h3>Weekly Structure</h3><ul><li>D1 timing</li><li>D2 exits</li><li>D3 linking</li></ul></div><div class="block"><h3>Self‑Check Cues</h3><ul><li>Rise before rotate?</li><li>Exit held 2 counts?</li><li>No heel rock?</li></ul></div><div class="block"><h3>Progression Notes</h3><ul><li>Harder entries (cross‑roll/choctaw)</li><li>Increase tempo while keeping small shapes</li></ul></div><div class="block"><h3>Improving This Element</h3><ul><li>Smaller shapes; steady head; micro knee pulses.</li></ul></div><div class="block"><details><summary><h3 style="display:inline">Progressive Learning</h3></summary><p><b>Stage 1 — Foundation</b></p><ul><li>Two‑foot imitations on dots for entry/turn/exit; say counts aloud.</li><li>Edge purity: clear FO/FI/BO/BI with knee/ankle roll; avoid flats.</li><li>Off‑ice: Rope 3×2 min; Ankle rockers 3×10; Pallof 3×12/side.</li></ul><p><b>Stage 2 — Integration</b></p><ul><li>Single‑foot turns on marked lobes; rise at top then snap; feet tight.</li><li>Equal lobe spacing with cones; film one length for consistency.</li><li>Off‑ice: Anti‑rotation band presses 3×12/side; Balance board 3×30 s.</li><li>Use metronome 92–108 BPM once shape is stable.</li></ul><p><b>Stage 3 — Mastery</b></p><ul><li>Link the full pattern at slow tempo; then increase speed keeping shapes small.</li><li>Quality checks: no heel rock; quiet head; clean checks on exits.</li><li>Off‑ice: Lateral bounds 3×10/side; Rope 3×2 min.</li></ul></div></details>
+    <hr><p class="small"><a href="hub.html">Back to Hub</a></p>
   </main>
 </div>
 <script>

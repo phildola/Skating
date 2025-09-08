@@ -3,8 +3,8 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crossfoot Spin – Spins</title>
 <style>
-:root{--ink:#0b1727; --muted:#5b728a; --accent:#0a7; --bg:#fff; --rule:#e5e7eb; --nav:#0b1727; --nav2:#12263f;}
-[data-theme="dark"]{--ink:#e5e7eb; --muted:#9ca3af; --accent:#14b8a6; --bg:#0b1727; --rule:#374151; --nav:#0b1727; --nav2:#12263f;}
+:root{--ink:#0b1727; --muted:#5b728a; --accent:#0a7; --bg:#fff; --card:#ffffff; --rule:#e5e7eb; --nav:#0b1727; --nav2:#12263f;}
+[data-theme="dark"]{--ink:#e5e7eb; --muted:#9ca3af; --accent:#14b8a6; --bg:#0b1727; --card:#0f223a; --rule:#374151; --nav:#0b1727; --nav2:#12263f;}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
 .layout{display:grid;grid-template-columns:260px 1fr;gap:24px;min-height:100vh}
 .sidebar{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--nav);color:#fff;padding:16px 14px;border-right:1px solid #0f223a}
@@ -21,9 +21,10 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.5
 .main{padding:28px 28px 80px}
 .main h1{font-size:2rem;margin:0 0 .5rem 0}
 h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:uppercase;letter-spacing:.02em}
-.block{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0;}
+.block{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;margin:12px 0;}
 .badge{display:inline-block;font-size:.78rem;border:1px solid var(--rule);border-radius:999px;padding:2px 8px;color:var(--muted);margin-left:8px}
 .small{font-size:.9rem;color:var(--muted);}
+details{margin:12px 0} details>summary{cursor:pointer;list-style:none} details>summary::-webkit-details-marker{display:none}
 @media (max-width: 900px){ .layout{grid-template-columns:1fr} .sidebar{position:relative;height:auto} }
 @media print{ .layout{grid-template-columns:1fr} .sidebar{display:none} .main{padding:10mm} }
 </style></head>
@@ -31,8 +32,8 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <div class="layout">
   <nav class="sidebar"><div class="brand">Skating Manual</div>
 <div class="theme-switch"><button id="modeToggleSide" class="modebtn">🌙 Dark Mode</button></div>
-<details open><summary>Home</summary><ul><li><a href="index.html">Overview</a></li><li><a href="hub.html">Hub</a></li></ul></details>
-<details open><summary>Jumps</summary><ul>
+<details><summary>Home</summary><ul><li><a href="index.html">Overview</a></li><li><a href="hub.html">Hub</a></li></ul></details>
+<details><summary>Jumps</summary><ul>
 <li><a href="waltz_jump.html">Waltz Jump</a></li>
 <li><a href="toe_loop.html">Toe Loop</a></li>
 <li><a href="salchow.html">Salchow</a></li>
@@ -41,7 +42,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="lutz.html">Lutz</a></li>
 <li><a href="axel.html">Axel</a></li>
 </ul></details>
-<details open><summary>Spins</summary><ul>
+<details><summary>Spins</summary><ul>
 <li><a href="upright_spin.html">Upright Spin</a></li>
 <li><a href="sit_spin.html">Sit Spin</a></li>
 <li><a href="camel_spin.html">Camel Spin</a></li>
@@ -56,7 +57,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="flying_sit.html">Flying Sit</a></li>
 <li><a href="flying_camel.html">Flying Camel</a></li>
 </ul></details>
-<details open><summary>Lunges & Glides</summary><ul>
+<details><summary>Lunges & Glides</summary><ul>
 <li><a href="forward_lunge.html">Forward Lunge</a></li>
 <li><a href="backward_lunge.html">Backward Lunge</a></li>
 <li><a href="side_lunge.html">Side Lunge</a></li>
@@ -67,7 +68,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="hydroblade.html">Hydroblade</a></li>
 <li><a href="knee_slide.html">Knee Slide</a></li>
 </ul></details>
-<details open><summary>Footwork</summary><ul>
+<details><summary>Footwork</summary><ul>
 <li><a href="three_turn_fo_bi.html">Three‑Turn (FO → BI)</a></li>
 <li><a href="three_turn_fi_bo.html">Three‑Turn (FI → BO)</a></li>
 <li><a href="back_three_bo_fo.html">Back Three (BO → FO)</a></li>
@@ -103,7 +104,7 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="rocker_to_loop.html">Turn‑to‑Jump: Rocker → Loop</a></li>
 <li><a href="bracket_to_axel.html">Turn‑to‑Jump: Bracket → Axel</a></li>
 </ul></details>
-<details open><summary>Skills / MITF</summary><ul>
+<details><summary>Skills / MITF</summary><ul>
 <li><a href="perimeter_stroking.html">Perimeter Stroking</a></li>
 <li><a href="forward_power_pulls.html">Forward Power Pulls</a></li>
 <li><a href="backward_power_pulls.html">Backward Power Pulls</a></li>
@@ -117,13 +118,15 @@ h3{font-size:1.02rem;margin:1rem 0 .35rem 0;color:var(--muted);text-transform:up
 <li><a href="choctaw_pattern.html">Choctaw Pattern</a></li>
 <li><a href="twizzle_pattern.html">Twizzle Pattern</a></li>
 <li><a href="spiral_sequence.html">Spiral Sequence</a></li>
+</ul></details>
+<details><summary>Resources</summary><ul>
+<li><a href="off_ice_exercises.html">Off‑Ice Exercise Guide</a></li>
 </ul></details></nav>
   <main class="main">
     <h1>Crossfoot Spin <span class="badge">Spins</span></h1>
     <p class="small">Detailed coaching card.</p>
-    <div class="block"><h3>What it is</h3><p>Crossed‑foot upright; balance and center emphasized.</p></div><div class="block"><h3>Phases</h3><p><b>Center</b></p><ul><li>Upright center.</li></ul><p><b>Cross</b></p><ul><li>Free foot crosses over boot; knees close; arms small.</li></ul><p><b>Sustain/Exit</b></p><ul><li>Head quiet; exit check.</li></ul></div><div class="block"><h3>Counts / Timing</h3><p>1–2 center • 3 cross • sustain • exit</p></div><div class="block"><h3>Arm & Leg Timeline</h3><ul><li>Arms tiny; knees close; forward pressure.</li></ul></div><div class="block"><h3>Common Mistakes & Fixes</h3><ul><li>Travel → center before crossing.</li><li>Heel rock → forward pressure.</li></ul></div><div class="block"><h3>Practice Routine</h3><p><b>On‑ice</b></p><ul><li>Upright→cross transitions x6</li><li>Holds x6</li></ul></div><div class="block"><h3>Off‑Ice Support</h3><ul><li>Balance 3×30 s</li><li>Core anti‑rot 3×12</li></ul></div><div class="block"><h3>Weekly Structure</h3><ul><li>D1 balance</li><li>D2 center</li><li>D3 artistry</li></ul></div><div class="block"><h3>Self‑Check Cues</h3><ul><li>Cross neat?</li><li>Quiet head?</li></ul></div><div class="block"><h3>Progression Notes</h3><ul><li>Add to combos</li></ul></div><div class="block"><h3>Improving This Element</h3><ul><li>Small shapes; calm breathing.</li></ul></div>
-    <hr>
-    <p class="small"><a href="hub.html">Back to Hub</a></p>
+    <div class="block"><h3>What it is</h3><p>Upright variation with crossed feet and compact arms; maintain stacked axis.</p></div><div class="block"><h3>Phases</h3><p><b>Entry</b></p><ul><li>Posture tall; arms narrow; head steady; align hips over edge.</li></ul><p><b>Load/Set</b></p><ul><li>Ankle→knee flex; feet close; shoulders stacked.</li></ul><p><b>Action</b></p><ul><li>Commit to the element with vertical rise/rotation or depth/lean as appropriate.</li></ul><p><b>Exit/Check</b></p><ul><li>Re‑stack; check shoulders; continue flow on clean edge.</li></ul></div><div class="block"><h3>Counts / Timing</h3><p>Entry 1–2 • Hook 3 • Set position • Sustain • Exit/check</p></div><div class="block"><h3>Arm & Leg Timeline</h3><ul><li>Arms: compact on approach → quick zip at take‑off/pull‑in → open/check on exit.</li><li>Legs: knees/feet close on load → immediate pull/tight axis → controlled extension on exit.</li></ul></div><div class="block"><h3>Common Mistakes & Fixes</h3><ul><li>Travel on set → center upright first; move to position in 1 count.</li><li>Wide arms/leg → shrink shapes; elbows brush ribs.</li><li>Speed loss → micro knee pulses; small shapes; forward pressure.</li></ul></div><div class="block"><h3>Practice Routine</h3><p><b>Centering</b></p><ul><li>Two‑foot to one‑foot centers x6; target ring size ≤ blade length.</li></ul><p><b>Position</b></p><ul><li>3× entries to position with 2–3 rev holds; no travel.</li></ul><p><b>Exits</b></p><ul><li>6× enter→stop→exit drills focusing on clean check.</li></ul></div><div class="block"><h3>Off‑Ice Support</h3><ul><li>Floor spinner 3×30 s</li><li>Arabesque holds 3×30 s (camel family)</li><li>Wall sits 3×30 s (sit family)</li></ul></div><div class="block"><h3>Weekly Structure</h3><ul><li>D1 center & stop travel</li><li>D2 position & speed</li><li>D3 entries/exits & variations</li></ul></div><div class="block"><h3>Self‑Check Cues</h3><ul><li>Center inside ring?</li><li>Shapes small & stacked?</li><li>Exit clean?</li></ul></div><div class="block"><h3>Progression Notes</h3><ul><li>Change edge/foot/position only after stable center</li><li>Increase revs without enlarging trace</li></ul></div><div class="block"><h3>Improving This Element</h3><ul><li>Quiet head; elbows in; pressure just forward of blade center.</li></ul></div><div class="block"><details><summary><h3 style="display:inline">Progressive Learning</h3></summary><p><b>Stage 1 — Foundation</b></p><ul><li>Two‑foot→one‑foot centers on a spot; stop travel within 1 rev.</li><li>Upright/backspin foundation; elbows brush ribs; forward blade pressure.</li><li>Position primer at half speed (pelvis level for camel; stable knee for sit).</li><li>Off‑ice: Floor spinner 3×30 s; Arabesque holds 3×30 s (camel); Wall sits 3×30 s (sit).</li><li>For flying entries: hop compact; catch center within 1 rev.</li></ul><p><b>Stage 2 — Integration</b></p><ul><li>Entry→center→position in 3 counts; 2–3 revs at small shapes.</li><li>Anti‑travel: micro knee pulses; quiet head; elbows in.</li><li>Enter/exit six times, stopping travel each time.</li><li>Off‑ice: Thoracic mobility 3×30 s; Anti‑extension core 3×12.</li></ul><p><b>Stage 3 — Mastery</b></p><ul><li>+1 rev vs baseline without extra travel.</li><li>Add variations (edge/foot/position) only if center stays inside ring.</li><li>Polish: choreo arms within cone of balance.</li><li>Off‑ice: Metronome spins 3×30 s; Hamstring/glute strength 3×12.</li></ul></div></details>
+    <hr><p class="small"><a href="hub.html">Back to Hub</a></p>
   </main>
 </div>
 <script>
